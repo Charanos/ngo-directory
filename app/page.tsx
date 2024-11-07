@@ -13,8 +13,6 @@ export default async function Home({
   const params = { search: query || null };
   const { data: posts } = await sanityFetch({ query: NGOS_QUERY, params });
 
-  const session = await auth();
-
   return (
     <>
       <section className="hero_container">
